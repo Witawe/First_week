@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*":{
-      "X-Author": "alekseilukovtsev"
+      "X-Author": "alekseilukovtsev",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
