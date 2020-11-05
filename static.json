@@ -5,8 +5,8 @@
       "Access-Control-Allow-Origin": "*"
     }
    "routes": {
-      "/public_html/": "login.html",
-      "/public_html/": "sample"
+      "/login/*": "login.html",
+      "/login/*": "sample"
   }
   }
 }
