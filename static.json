@@ -1,14 +1,14 @@
 {    
-  "routes":{
-      "/login/*": "login.html",
-      "/sample/*": "sample.html"
+  "routes": {
+      "/login/*": "index.html",
+      "/sample/*": "index2.html"
   },
   "headers": {
-    "/login/*":{
+    "/login/*": {
       "Content-Type": "text/plain; charset=UTF-8",
       "Access-Control-Allow-Origin": "*"
     },
-    "/sample/*":{
+    "/sample/*": {
       "Content-Type": "text/plain; charset=UTF-8",
       "Access-Control-Allow-Origin": "*"
     }
