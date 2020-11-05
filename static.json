@@ -3,10 +3,10 @@
     "/*":{
       "X-Author": "alekseilukovtsev",
       "Access-Control-Allow-Origin": "*",
+      "routes":{
+        "/login/*": "login.html",
+        "/login/*": "sample"
+      }
     }
-   "routes":{
-      "/login/*": "login.html",
-      "/login/*": "sample"
   }
- }
 }
