@@ -2,11 +2,11 @@
   "headers": {
     "/*":{
       "X-Author": "alekseilukovtsev",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
     }
-   "routes": {
+   "routes":{
       "/login/*": "login.html",
       "/login/*": "sample"
   }
-  }
+ }
 }
