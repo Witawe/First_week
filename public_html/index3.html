@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
- </head>
- <body>
-  <form id="data"></form>
-  <p><input placeholder="Ваше имя" name="user" form="data"></p>
-  <p><input type="submit" value="Отправить форму" form="data"></p>
- </body>
-</html>
+<form name="idform">
+    <input type="text" name="id" 
+    placeholder="Введите id"
+    onchange="document.getElementById('link').href='http://ya.ru/?id='+escape(this.value)" />
+    <a id="link" href="http://ya.ru/">ок!</a>
+</form>
