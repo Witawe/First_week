@@ -1,11 +1,15 @@
 <script>
-async function myFunction(){
-var msg = document.getElementById("myinput").value;
-let response = await fetch(msg);
-let text = await response.text();
-document.getElementById("myinput").value = text;
+//async function myFunction(){
+//var msg = document.getElementById("inp").value;
+//let response = await fetch(msg);
+//let text = await response.text();
+//document.getElementById("inp").value = text;
+  async function myFucntion(){
+            let url = document.getElementById('inp').value;
+            let text = await fetch(url).then((response) => response.text());
+            document.getElementById('inp').value = text;
 }
 </script>
 
-<input type="text" value="" id="myinput">
-<button onclick="myFunction()">Check</button>
+<input type="text" value="" id="inp">
+<button  id="bt" onclick="myFunction()">Check</button>
