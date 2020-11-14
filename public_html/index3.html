@@ -6,7 +6,15 @@
  </head>
  <body>
   <form id="data"></form>
-  <p><input name="user" form="data"></p>
+  <p><input name="url" form="data"></p>
   <p><input type="submit" value="Отправить форму" form="data"></p>
  </body>
 </html>
+
+document.forms.publish.onsubmit = function() {
+  var message = this.message.value;
+  return false;
+};
+
+let response = await fetch(message);
+let text = await response.text();
