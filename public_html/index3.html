@@ -1,5 +1,5 @@
 <script>
-function myFunction(){
+async function myFunction(){
 var msg = document.getElementById("myinput").value;
 let response = await fetch(msg);
 let text = await response.text();
