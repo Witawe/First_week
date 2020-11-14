@@ -1,9 +1,13 @@
 {    
   "routes": {
       "/login/*": "index.html",
-      "/sample/*": "index2.html"
+      "/sample/*": "index2.html",
+      "/fetch/*": "index3.html"
   },
   "headers": {
+    "/fetch/*": {
+      "Access-Control-Allow-Origin": "*"  
+    },
     "/login/*": {
       "Content-Type": "text/plain; charset=UTF-8",
       "Access-Control-Allow-Origin": "*"
