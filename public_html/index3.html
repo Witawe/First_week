@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>неделя 3</title>
- </head>
- <body>
-  <form id="data"></form>
-  <p><input name="url" form="data"></p>
-  <p><input type="submit" value="Отправить форму" form="data"></p>
- </body>
-</html>
-
-document.forms.publish.onsubmit = function() {
-  var message = this.message.value;
-  return false;
-};
-
-let response = await fetch(message);
-let text = await response.text();
+<script>
+function myFunction(){
+alert(document.getElementById("myinput").value);
+}
+</script>
+<input type="text" value="" id="myinput">
+<button onclick="myFunction()">Click me</button>
