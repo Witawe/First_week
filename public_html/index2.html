@@ -1,8 +1,9 @@
-function task(x){
-   if(x<18){
-            return no
-            }else
-            {
-            
-            }
+function task(x) {
+  return new Promise(function(resolve, reject) {
+    if (x < 18) {
+         resolve("yes");
+    } else {
+      reject("no");
+    }
+  });
 }
