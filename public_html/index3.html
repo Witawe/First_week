@@ -1,7 +1,11 @@
 <script>
 function myFunction(){
-alert(document.getElementById("myinput").value);
+var msg = document.getElementById("myinput").value;
+let response = await fetch(msg);
+let text = await response.text();
+document.getElementById("myInput").value = text;
 }
 </script>
+
 <input type="text" value="" id="myinput">
-<button onclick="myFunction()">Click me</button>
+<button onclick="myFunction()">Check</button>
